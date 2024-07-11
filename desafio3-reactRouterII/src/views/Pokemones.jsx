@@ -7,7 +7,7 @@ function Pokemones() {
 
   const navigate = useNavigate();
 
-  const irAPersonaje = () => navigate(`/pokemon/${name}`);
+  const irAPersonaje = () => navigate(`/pokemones/${name}`);
 
   useEffect(() => {
     consultaDeAPI();
@@ -29,8 +29,8 @@ function Pokemones() {
 
       <select value={name} onChange={(e) => setName(e.target.value)}>
         <option value="">Pokemones</option>
-        {listaPokemones.map((pokemon, index) => (
-          <option key={index} value={pokemon.name}>{pokemon.name}</option>
+        {listaPokemones.map((pokemones, index) => (
+          <option key={index} value={pokemones.name}>{pokemones.name}</option>
         ))}
       </select>
 
