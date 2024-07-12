@@ -6,9 +6,43 @@
   color-scheme: light dark;
   color: rgb(38, 38, 38);
   background-color: #ffffff;
-
 }
 
-.active{
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 50px;
+  background-color: rgb(41, 41, 41);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img{
+  width: 50px;
+}
+
+nav .logo h2{
+  color: yellow; 
+  margin-right: 10px;
+}
+
+.navLink{
+  color: #ffffff;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.active {
   color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
 }
