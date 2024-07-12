@@ -8,6 +8,8 @@
   background-color: #ffffff;
 }
 
+/* Navigate.jsx */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -46,3 +48,79 @@ nav .logo h2{
   font-size: 18px;
   margin-right: 20px;
 }
+
+/* Home.jsx */
+
+.bienvenida{
+  text-align: center;
+}
+
+.bienvenida h1{
+  margin-top: 70px;
+}
+
+.bienvenida img {
+  width: 700px;
+  margin-top: -70px;
+}
+
+/* Pokemones.jsx */
+
+.selectPokemon{
+  text-align: center;
+  margin-top: 70px;
+}
+
+.selectPokemon h1{
+  margin-bottom: 40px;
+}
+
+.selectPokemon select{
+  width: 200px;
+  height: 35px;
+  padding-left: 8px;
+  margin-bottom: 35px;
+}
+
+.boton button{
+  border: none;
+  background-color: rgb(41, 41, 41);
+  color: yellow;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.boton button:hover{
+  background-color: yellow;
+  color: red;
+}
+
+/* DetallesPokemon.jsx */
+
+.pokemon h1 {
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.descripcion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .descripcion .imagen img{
+  margin-right: 50px;
+ }
+
+ .informacion{
+  display: flex;
+  gap: 50px;
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+ }

@@ -24,17 +24,21 @@ function Pokemones() {
   };
 
   return (
-    <div>
-      <h2>Selecciona un Pokémon</h2>
+    <div className="selectPokemon">
+      <h1>Selecciona un Pokémon</h1>
 
       <select value={name} onChange={(e) => setName(e.target.value)}>
         <option value="">Pokemones</option>
         {listaPokemones.map((pokemones, index) => (
-          <option key={index} value={pokemones.name}>{pokemones.name}</option>
+          <option key={index} value={pokemones.name}>
+            {pokemones.name}
+          </option>
         ))}
       </select>
 
-      <button onClick={irAPersonaje}>Buscar</button>
+      <div className="boton">
+        <button onClick={irAPersonaje}>Ver Detalles</button>
+      </div>
     </div>
   );
 }
